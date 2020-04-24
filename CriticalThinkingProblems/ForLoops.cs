@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CriticalThinkingProblems
 {
-    class Loops
+    class ForLoops
     {
         public void RunFiveLoops()
         {

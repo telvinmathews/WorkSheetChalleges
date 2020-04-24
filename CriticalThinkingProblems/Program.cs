@@ -11,6 +11,7 @@ namespace CriticalThinkingProblems
         static void Main(string[] args)
         {
             ForLoops loops = new ForLoops();
+            WhileLoops whileLoops = new WhileLoops();
             //loops.RunFiveLoops();
             //loops.RunNineloopsBackwards();
             //loops.UserInputLoop();
@@ -18,7 +19,9 @@ namespace CriticalThinkingProblems
             //loops.PrintCharInString();
             //loops.ForEachPrintCharInString();
             //loops.PrintEverOtherCharInString();
-            loops.PrintCharDivBy3InString();
+            //loops.PrintCharDivBy3InString();
+            //whileLoops.LoopWhileTrue();
+            whileLoops.UserInputWhileLoop();
             Console.ReadLine();
         }
     }
