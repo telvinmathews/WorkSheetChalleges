@@ -21,7 +21,9 @@ namespace CriticalThinkingProblems
             //loops.PrintEverOtherCharInString();
             //loops.PrintCharDivBy3InString();
             //whileLoops.LoopWhileTrue();
-            whileLoops.UserInputWhileLoop();
+            //whileLoops.UserInputWhileLoop();
+            CalulatorMadness calulatorMadness = new CalulatorMadness();
+            calulatorMadness.RunCalulations();
             Console.ReadLine();
         }
     }
