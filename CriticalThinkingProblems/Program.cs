@@ -24,6 +24,7 @@ namespace CriticalThinkingProblems
             //whileLoops.UserInputWhileLoop();
             CalulatorMadness calulatorMadness = new CalulatorMadness();
             calulatorMadness.RunCalulations();
+            
             Console.ReadLine();
         }
     }

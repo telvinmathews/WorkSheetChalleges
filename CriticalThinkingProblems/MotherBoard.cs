@@ -31,8 +31,6 @@ namespace CriticalThinkingProblems
         public void InstallApplications(Applications applications)
         {
             ApplicationsInHardDrive.Add(applications);
-            
-            
         }
     }
 }
