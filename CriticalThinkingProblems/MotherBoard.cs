@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace CriticalThinkingProblems
 {
-    class MotherBoard
+    class MotherBoard 
     {
         //Member Variables (has a)
-        string Manufacturer;
+        public string Manufacturer;
         CPU Processor;
         RAM TemporaryMemory;
         HardDrive Storage;
         GPU Graphics;
-        public List<Applications> ApplicationsInHardDrive;
 
         //Conductor (spawn)
         public MotherBoard(string manufacturer, CPU cpu, RAM ram, HardDrive hardDrive, GPU gpu)
@@ -24,13 +23,14 @@ namespace CriticalThinkingProblems
             Processor = cpu;
             Storage = hardDrive;
             Graphics = gpu;
-            ApplicationsInHardDrive = new List<Applications>();
-
         }
         //Member methods (can do)
         public void InstallApplications(Applications applications)
         {
-            ApplicationsInHardDrive.Add(applications);
+            if (TemporaryMemory.TotalGigabytes > applications.RequiredRam && Storage.AvailableStorage > applications.RequiredStorage)
+            {
+                Storage.ApplicationsInHardDrive.Add(applications);
+            }
         }
     }
 }

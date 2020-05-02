@@ -9,14 +9,18 @@ namespace CriticalThinkingProblems
     class HardDrive
     {
         //Member variable (Has a)
-        Double TotalStorage;
-        Double AnimalStorage;
+        public double TotalStorage;
+        public double AvailableStorage;
+        public List<Applications> ApplicationsInHardDrive;
         //Conductor (Spawn)
-        public HardDrive(Double totalStorage, Double animalStorage)
+        public HardDrive(double totalStorage, double availableStorage)
         {
             TotalStorage = totalStorage;
-            AnimalStorage = animalStorage;
+            AvailableStorage = availableStorage;
+            ApplicationsInHardDrive = new List<Applications>();
         }
         //Member method (Can do)
+
+
     }
 }

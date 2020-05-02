@@ -13,7 +13,6 @@ namespace CriticalThinkingProblems
         public string ApplicationType;
         public double RequiredRam;
         public double RequiredStorage;
-        public List<Applications> ApplicationsInHardDrive;
         //Conductor (Spawn)
         public Applications()
         {
@@ -21,7 +20,6 @@ namespace CriticalThinkingProblems
             ApplicationType = "Message Service";
             RequiredRam = 4.0;//In gigabytes
             RequiredStorage = 0.512;//In gigabytes
-
         }
         //Member method (Can do)
 
