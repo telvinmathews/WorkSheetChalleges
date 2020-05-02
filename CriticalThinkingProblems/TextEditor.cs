@@ -6,22 +6,14 @@ using System.Threading.Tasks;
 
 namespace CriticalThinkingProblems
 {
-    abstract class Applications
+    class TextEditor : Applications
     {
-        //Member variable (Has a)
-        public string ApplicationName;
-        public string ApplicationType;
-        public double RequiredRam;
-        public double RequiredStorage;
-        //Conductor (Spawn)
-        public Applications()
+        public TextEditor()
         {
             ApplicationName = "Slack";
             ApplicationType = "Message Service";
             RequiredRam = 4.0;//In gigabytes
             RequiredStorage = 0.512;//In gigabytes
         }
-        //Member method (Can do)
-
     }
 }

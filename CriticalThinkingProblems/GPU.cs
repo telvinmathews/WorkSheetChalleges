@@ -9,8 +9,8 @@ namespace CriticalThinkingProblems
     class GPU
     {
         //Member variable (Has a)
-        string Manufacturer;
-        double EffectiveMemory;
+        public string Manufacturer;
+        public double EffectiveMemory;
         //Conductor (Spawn)
         public GPU(string manufacturer, double effectiveMemory)
         {

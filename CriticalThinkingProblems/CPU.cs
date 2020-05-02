@@ -19,16 +19,27 @@ namespace CriticalThinkingProblems
         }
         //Member method (Can do)
 
-        public void ProcessInstall(Applications app, HardDrive hardDrive, RAM ram)
+        public void ProcessInstallApp(Applications app, HardDrive hardDrive, RAM ram)
         {
             hardDrive.ApplicationsInHardDrive.Add(app);
+        } 
+        public void ProcessInstallGame(Game game, HardDrive hardDrive, RAM ram)
+        {
+            hardDrive.ApplicationsInHardDrive.Add(game);
         }
 
-        public void CheckRequirements(Applications app, HardDrive hardDrive, RAM ram)
+        public void CheckRequirementsForApp(Applications app, HardDrive hardDrive, RAM ram, GPU gpu)
         {
             if (ram.TotalGigabytes > app.RequiredRam && hardDrive.AvailableStorage > app.RequiredStorage)
             {
-                ProcessInstall(app,hardDrive,ram);
+                ProcessInstallApp(app,hardDrive,ram);
+            }
+        }
+        public void CheckRequirementsForGame(Game game, HardDrive hardDrive, RAM ram, GPU gpu)
+        {
+            if (ram.TotalGigabytes > game.RequiredRam && hardDrive.AvailableStorage > game.RequiredStorage && gpu.EffectiveMemory > game.RequiredEffectiveMemory)
+            {
+                ProcessInstallApp(game,hardDrive,ram);
             }
         }
     }

@@ -9,8 +9,8 @@ namespace CriticalThinkingProblems
     class RAM
     {
         //Member Variable (has a)
-        double TotalGigabytes;
-        string Brand;
+        public double TotalGigabytes;
+        public string Brand;
         //Condutor (spawn)
         public RAM(double totalGigs, string brand)
         {

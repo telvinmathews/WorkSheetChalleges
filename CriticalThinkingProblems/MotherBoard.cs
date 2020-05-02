@@ -10,10 +10,10 @@ namespace CriticalThinkingProblems
     {
         //Member Variables (has a)
         public string Manufacturer;
-        CPU Processor;
-        RAM TemporaryMemory;
-        HardDrive Storage;
-        GPU Graphics;
+        public CPU Processor;
+        public RAM TemporaryMemory;
+        public HardDrive Storage;
+        public GPU Graphics;
 
         //Conductor (spawn)
         public MotherBoard(string manufacturer, CPU cpu, RAM ram, HardDrive hardDrive, GPU gpu)
@@ -25,12 +25,12 @@ namespace CriticalThinkingProblems
             Graphics = gpu;
         }
         //Member methods (can do)
-        public void InstallApplications(Applications applications)
-        {
-            if (TemporaryMemory.TotalGigabytes > applications.RequiredRam && Storage.AvailableStorage > applications.RequiredStorage)
-            {
-                Storage.ApplicationsInHardDrive.Add(applications);
-            }
-        }
+        //public void InstallApplications(Applications applications)
+        //{
+        //    if (TemporaryMemory.TotalGigabytes > applications.RequiredRam && Storage.AvailableStorage > applications.RequiredStorage)
+        //    {
+        //        Storage.ApplicationsInHardDrive.Add(applications);
+        //    }
+        //}
     }
 }
