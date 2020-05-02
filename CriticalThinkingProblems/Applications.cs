@@ -16,10 +16,7 @@ namespace CriticalThinkingProblems
         //Conductor (Spawn)
         public Applications()
         {
-            ApplicationName = "Slack";
-            ApplicationType = "Message Service";
-            RequiredRam = 4.0;//In gigabytes
-            RequiredStorage = 0.512;//In gigabytes
+          
         }
         //Member method (Can do)
 
